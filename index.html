@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="require.js"></script>
+</head>
+
+<body>
+    <title>活動管理系統</title>
+    <div class="Title">活動管理系統</div>
+    <div class="BarBG"></div>
+    <div class="FunctionBar">
+        <div class="Tag" id="0">帳號管理</div>
+        <div class="Tag" id="1">活動管理</div>
+        <div class="Tag" id="2">報名活動</div>
+        <div class="Tag" id="3">活動統計</div>
+    </div>
+
+    <table id="userName">
+        <thead>
+            <tr>
+                <th colspan="3">帳號管理</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">名稱</td>
+                <td class="center">權限</td>
+                <td class="center">功能</td>
+            </tr>
+        </tbody>
+        <tbody id="table">
+        </tbody>
+    </table>
+
+    <table id="actManager" style="visibility:hidden">
+        <thead>
+            <tr>
+                <th colspan="2">活動管理</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">活動名稱</td>
+                <td class="center">功能</td>
+            </tr>
+        </tbody>
+        <tbody id="tableActManager">
+        </tbody>
+    </table>
+
+    <table id="signUp" style="visibility:hidden">
+        <thead>
+            <tr>
+                <th colspan="3">報名活動</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">活動名稱</td>
+                <td class="center">已報名</td>
+                <td class="center">功能</td>
+            </tr>
+        </tbody>
+        <tbody id="tableSignUp">
+        </tbody>
+    </table>
+
+    
+    <table id="ActDataSchool" style="visibility:hidden">
+        <thead>
+            <tr>
+                <th colspan="2">活動統計</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">當月活動</td>
+                <td class="center">參加人數</td>
+            </tr>
+        </tbody>
+        <tbody id="tableActDataSchool">
+        </tbody>
+    </table>
+
+    <table id="ActData" style="visibility:hidden">
+        <thead>
+            <tr>
+                <th colspan="2">活動統計</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="center">使用者名稱</td>
+                <td class="center">參加活動次數</td>
+            </tr>
+        </tbody>
+        <tbody id="tableActData">
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
